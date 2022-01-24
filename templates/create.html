@@ -1,0 +1,15 @@
+{{define "create"}}
+{{template "header"}}
+<main class="px-3  " >
+    <h1>Добавление статьи</h1>
+    <form action="/save" method="post">
+        <input class="form-control" name="title" id="title" type="text " placeholder="Введите название статьи"><br>
+        <textarea class="form-control" name="anons" id="anons" placeholder="Анонс статьи"></textarea><br>
+        <textarea class="form-control" name="full_text" id="full_text" placeholder="Статья"></textarea><br>
+        <button class="btn btn-warning">Добавить</button>
+    </form>
+    </form>
+</main>
+
+{{template "footer"}}
+{{ end }}
